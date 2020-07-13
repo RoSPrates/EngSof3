@@ -6,6 +6,7 @@ import recepcao.acesso.OrdemPessoa;
 public class Morador extends Pessoa {
     private String ap;
 
+
     public Morador(String nome, String sobrenome, String CPF, String ap) {
         super(nome, sobrenome, CPF);
         this.ap = ap;

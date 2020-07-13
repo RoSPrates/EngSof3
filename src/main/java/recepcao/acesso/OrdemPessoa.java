@@ -36,4 +36,5 @@ public abstract class OrdemPessoa {
                 && ordem.getSolicitante().getSobrenome().equals(sobrenomeSolicitante)).
                 collect(Collectors.toList());
     }
+
 }

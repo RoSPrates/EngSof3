@@ -2,7 +2,9 @@ package recepcao.acesso;
 
 import pessoas.Pessoa;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.logging.SimpleFormatter;
 
 public class OrdemDeAcesso {
     private Long id;
@@ -50,5 +52,16 @@ public class OrdemDeAcesso {
 
     public Pessoa getConvidado() {
         return this.convidado;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat format = new SimpleDateFormat("dd'/'MM'/'yyyy");
+        String s = "";
+        s+= "Solicitante: "+ this.solicitante.getNome() + " "+ this.solicitante.getSobrenome()+"\n";
+        s+= "Convidado: "+ this.convidado.getNome() + " "+ this.convidado.getSobrenome()+"\n";
+        s+= "Data de Entrada: "+ format.format(this.dataEntrada.getTime())+"\n";
+        s+= "Validade autorização: "+ format.format(this.dataEntrada.getTime())+"\n";
+        return s;
     }
 }
