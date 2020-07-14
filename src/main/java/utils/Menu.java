@@ -4,7 +4,7 @@ public class Menu {
     public static void menu(){
         char escolha;
         do {
-            escolha = Tela.decidir("Escolha:\nG para Gerar Ordem\nB para Buscar Ordem\n" +
+            escolha = Tela.decidir("Escolha:\nG para Gerar Ordem\n" +
                     "C para Cancelar\nS para sair.");
             switch (escolha) {
                 case 'S':
@@ -17,9 +17,6 @@ public class Menu {
                     break;
                 case 'b': case'B':
                     Tela.BuscarOrdem("Digite o Id da Ordem");
-                    break;
-                case 'c': case'C':
-                    Menu;
                     break;
                 default:
                     Tela.exibe("Opção Invalida!");

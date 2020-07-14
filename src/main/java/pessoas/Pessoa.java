@@ -41,7 +41,7 @@ public class Pessoa {
 
     public void setCpf(String cpf) {
         CPFs.registraCPF(cpf);
-        this.cpf.setCpf(cpf);
+        this.cpf = new CPF(cpf);
     }
 
     @Override

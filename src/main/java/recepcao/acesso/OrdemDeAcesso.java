@@ -58,10 +58,11 @@ public class OrdemDeAcesso {
     public String toString() {
         SimpleDateFormat format = new SimpleDateFormat("dd'/'MM'/'yyyy");
         String s = "";
-        s+= "Solicitante: "+ this.solicitante.getNome() + " "+ this.solicitante.getSobrenome()+"\n";
-        s+= "Convidado: "+ this.convidado.getNome() + " "+ this.convidado.getSobrenome()+"\n";
-        s+= "Data de Entrada: "+ format.format(this.dataEntrada.getTime())+"\n";
-        s+= "Validade autorização: "+ format.format(this.dataEntrada.getTime())+"\n";
+        s += "Id da Ordem: " + this.id + "\n";
+        s += "Solicitante: " + this.solicitante.getNome() + " " + this.solicitante.getSobrenome() + "\n";
+        s += "Convidado: " + this.convidado.getNome() + " " + this.convidado.getSobrenome() + "\n";
+        s += "Data de Entrada: " + format.format(this.dataEntrada.getTime()) + "\n";
+        s += "Validade autorização: " + format.format(this.dataEntrada.getTime()) + "\n";
         return s;
     }
 }

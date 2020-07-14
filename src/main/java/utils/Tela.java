@@ -54,11 +54,11 @@ public abstract class Tela {
     }
 
     static void gerarOrdem(){
-        Morador morador = new Morador(JOptionPane.showInputDialog("Digite o nome"),JOptionPane.showInputDialog("Digite o Sobrenome"),
-                JOptionPane.showInputDialog("Digite o CPF"),JOptionPane.showInputDialog("Digite o Numero do Apartamento"));
-        JOptionPane.showMessageDialog(null,morador.criarOrdemDeAcesso(JOptionPane.showInputDialog("Digite o nome"),JOptionPane.showInputDialog("Digite o Sobrenome"),
-                JOptionPane.showInputDialog("Digite o CPF"),Integer.parseInt(JOptionPane.showInputDialog("Digite o Dia de entrada")),
-                Integer.parseInt(JOptionPane.showInputDialog("Digite o mes de entrada")),Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de entrada"))));
+        Morador morador = new Morador(JOptionPane.showInputDialog("Digite o nome do Solicitante"),JOptionPane.showInputDialog("Digite o Sobrenome do Solicitante"),
+                JOptionPane.showInputDialog("Digite o CPF do Solicitante"),JOptionPane.showInputDialog("Digite o Numero do Apartamento do Solicitante"));
+        JOptionPane.showMessageDialog(null,morador.criarOrdemDeAcesso(JOptionPane.showInputDialog("Digite o nome do Convidado"),JOptionPane.showInputDialog("Digite o Sobrenome do Convidado"),
+                JOptionPane.showInputDialog("Digite o CPF do Convidado"),Integer.parseInt(JOptionPane.showInputDialog("Digite o Dia de entrada do Convidado")),
+                Integer.parseInt(JOptionPane.showInputDialog("Digite o mes de entrada do Convidado")),Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de entrada do Convidado"))));
     }
 
     static void BuscarOrdem(String text){
